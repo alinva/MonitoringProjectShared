@@ -1,4 +1,5 @@
 package Charts;
+
 import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
@@ -16,7 +17,6 @@ import org.jfree.chart.renderer.xy.XYLineAndShapeRenderer;
 import org.jfree.data.time.*;
 import org.jfree.data.xy.XYDataset;
 import org.jfree.ui.*;
-import org.jfree.data.time.Second;
 import org.jfree.data.time.Second;
 
 public class ChartGeneration extends ApplicationFrame
