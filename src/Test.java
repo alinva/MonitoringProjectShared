@@ -34,7 +34,7 @@ public class Test
 		//UnixConnection unixConnection = new UnixConnection("iltlvh325", "sapinst","a2i2000!", null, null, 0);
 		
 		
-		ExecuteUnixOperations executeUnixOperations =  new ExecuteUnixOperations("ilsun45", "mqmadm","a2i2000!", null, null, 0);
+		ExecuteUnixOperations executeUnixOperations =  new ExecuteUnixOperations("iltlvh325", "h26adm","a2i2000!", null, null, 0);
 		executeUnixOperations.finish();		
 
 	}

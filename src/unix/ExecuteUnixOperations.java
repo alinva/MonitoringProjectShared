@@ -67,10 +67,10 @@ public class ExecuteUnixOperations extends CommandExecuter
    
     // PARAMETERS TO GET FROM GUI  -  START   TODO
     /////////////////////////////////////////
-    String port="59950";
-    String[] paramsForSH = {"MQM"};
+    String port="59350";
+    String[] paramsForSH = {"H26"};
     Boolean clixOn = true;
-    String SID = "MQM";     // 
+    String SID = "H26";     // 
     /////////////////////////////////////////
     // PARAMETERS TO GET FROM GUI  -  END
 
@@ -332,7 +332,7 @@ public class ExecuteUnixOperations extends CommandExecuter
 					MonLogger.myLogger.log(Level.INFO, "Add mds/mdis/mdss monitoring output to test folder" + TestFolderName);
 					if (fileName.startsWith("mds_"))
 					{
-						excelManagement.mainExcelFlow(4, 10, interval, TestFolder);	
+						excelManagement.mainExcelFlow(4, 0, interval, TestFolder);	
 					}
 					
 				}

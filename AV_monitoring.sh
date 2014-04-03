@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/usr/local/bin/bash
 
 #SCRIPT: AV_monitoring.sh
 #
