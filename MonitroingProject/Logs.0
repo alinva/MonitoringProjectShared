@@ -1,0 +1,400 @@
+Mar 9, 2014 5:02:31 PM unix.ExecuteUnixOperations finish
+INFO: Check tests folder's size
+Mar 9, 2014 5:02:45 PM unix.ExecuteUnixOperations start
+INFO: Program started immediatly
+Mar 9, 2014 5:02:45 PM unix.ExecuteUnixOperations start
+INFO: Gui Parameter Check started:
+Mar 9, 2014 5:02:46 PM unix.GuiParameterCheck mainGuiCheck
+INFO: Connection Test was successful
+Mar 9, 2014 5:02:47 PM unix.GuiParameterCheck mainGuiCheck
+INFO: Instance does NOT exist!
+Mar 9, 2014 5:02:48 PM unix.GuiParameterCheck mainGuiCheck
+INFO: MDS is NOT started!
+Mar 9, 2014 5:02:48 PM unix.GuiParameterCheck mainGuiCheck
+INFO: Start before proceeding or uncheck the 'mds-r' radiobutton!
+Mar 9, 2014 5:02:50 PM unix.GuiParameterCheck mainGuiCheck
+INFO: MDIS is NOT started!
+Mar 9, 2014 5:02:50 PM unix.GuiParameterCheck mainGuiCheck
+INFO: Start before proceeding or uncheck the 'mdis-r' radiobutton!
+Mar 9, 2014 5:02:51 PM unix.GuiParameterCheck mainGuiCheck
+INFO: MDSS is NOT started!
+Mar 9, 2014 5:02:51 PM unix.GuiParameterCheck mainGuiCheck
+INFO: Start before proceeding or uncheck the 'mdss-r' radiobutton!
+Mar 9, 2014 5:02:51 PM unix.ExecuteUnixOperations start
+INFO: Gui parameters check FAILED! return to GUI..
+Mar 9, 2014 5:02:51 PM unix.ExecuteUnixOperations start
+INFO: Gui parameters check Success!
+Mar 9, 2014 5:02:51 PM unix.ExecuteUnixOperations start
+INFO: Kill vmstat and AV_monitoring processes if running
+Mar 9, 2014 5:02:56 PM unix.ExecuteUnixOperations start
+INFO: Remove old monitoring files from OS
+Mar 9, 2014 5:02:57 PM unix.ExecuteUnixOperations start
+INFO: Locate bash installation folder on OS
+Mar 9, 2014 5:03:04 PM unix.ExecuteUnixOperations start
+INFO: Copy AV_Monitoring script to OS
+Mar 9, 2014 5:03:10 PM unix.ExecuteUnixOperations start
+INFO: Execute Monitoring file on OS
+Mar 9, 2014 5:03:12 PM unix.ExecuteUnixOperations start
+INFO: Check if clix monitoring enabled
+Mar 9, 2014 5:03:12 PM unix.ExecuteUnixOperations start
+INFO: clix monitoring enabled - Run clix!
+Mar 9, 2014 5:13:04 PM unix.ExecuteUnixOperations finish
+INFO: Check tests folder's size
+Mar 9, 2014 5:13:13 PM unix.ExecuteUnixOperations finish
+INFO: Stop clix monitoring
+Mar 9, 2014 5:14:04 PM unix.ExecuteUnixOperations start
+INFO: Program started immediatly
+Mar 9, 2014 5:14:04 PM unix.ExecuteUnixOperations start
+INFO: Gui Parameter Check started:
+Mar 9, 2014 5:14:04 PM unix.GuiParameterCheck mainGuiCheck
+INFO: Connection Test was successful
+Mar 9, 2014 5:14:06 PM unix.GuiParameterCheck mainGuiCheck
+INFO: Instance does NOT exist!
+Mar 9, 2014 5:14:07 PM unix.GuiParameterCheck mainGuiCheck
+INFO: MDS is NOT started!
+Mar 9, 2014 5:14:07 PM unix.GuiParameterCheck mainGuiCheck
+INFO: Start before proceeding or uncheck the 'mds-r' radiobutton!
+Mar 9, 2014 5:14:08 PM unix.GuiParameterCheck mainGuiCheck
+INFO: MDIS is NOT started!
+Mar 9, 2014 5:14:08 PM unix.GuiParameterCheck mainGuiCheck
+INFO: Start before proceeding or uncheck the 'mdis-r' radiobutton!
+Mar 9, 2014 5:14:09 PM unix.GuiParameterCheck mainGuiCheck
+INFO: MDSS is NOT started!
+Mar 9, 2014 5:14:09 PM unix.GuiParameterCheck mainGuiCheck
+INFO: Start before proceeding or uncheck the 'mdss-r' radiobutton!
+Mar 9, 2014 5:14:09 PM unix.ExecuteUnixOperations start
+INFO: Gui parameters check FAILED! return to GUI..
+Mar 9, 2014 5:14:09 PM unix.ExecuteUnixOperations start
+INFO: Gui parameters check Success!
+Mar 9, 2014 5:14:09 PM unix.ExecuteUnixOperations start
+INFO: Kill vmstat and AV_monitoring processes if running
+Mar 9, 2014 5:17:11 PM unix.ExecuteUnixOperations start
+INFO: Program started immediatly
+Mar 9, 2014 5:17:11 PM unix.ExecuteUnixOperations start
+INFO: Gui Parameter Check started:
+Mar 9, 2014 5:17:11 PM unix.GuiParameterCheck mainGuiCheck
+INFO: Connection Test was successful
+Mar 9, 2014 5:17:12 PM unix.GuiParameterCheck mainGuiCheck
+INFO: Instance exist
+Mar 9, 2014 5:17:14 PM unix.GuiParameterCheck mainGuiCheck
+INFO: MDS is NOT started!
+Mar 9, 2014 5:17:14 PM unix.GuiParameterCheck mainGuiCheck
+INFO: Start before proceeding or uncheck the 'mds-r' radiobutton!
+Mar 9, 2014 5:17:15 PM unix.GuiParameterCheck mainGuiCheck
+INFO: MDIS is NOT started!
+Mar 9, 2014 5:17:15 PM unix.GuiParameterCheck mainGuiCheck
+INFO: Start before proceeding or uncheck the 'mdis-r' radiobutton!
+Mar 9, 2014 5:17:16 PM unix.GuiParameterCheck mainGuiCheck
+INFO: MDSS is NOT started!
+Mar 9, 2014 5:17:16 PM unix.GuiParameterCheck mainGuiCheck
+INFO: Start before proceeding or uncheck the 'mdss-r' radiobutton!
+Mar 9, 2014 5:17:16 PM unix.ExecuteUnixOperations start
+INFO: Gui parameters check FAILED! return to GUI..
+Mar 9, 2014 5:17:16 PM unix.ExecuteUnixOperations start
+INFO: Gui parameters check Success!
+Mar 9, 2014 5:17:16 PM unix.ExecuteUnixOperations start
+INFO: Kill vmstat and AV_monitoring processes if running
+Mar 9, 2014 5:17:21 PM unix.ExecuteUnixOperations start
+INFO: Remove old monitoring files from OS
+Mar 9, 2014 5:17:22 PM unix.ExecuteUnixOperations start
+INFO: Locate bash installation folder on OS
+Mar 9, 2014 5:17:30 PM unix.ExecuteUnixOperations start
+INFO: Copy AV_Monitoring script to OS
+Mar 9, 2014 5:17:35 PM unix.ExecuteUnixOperations start
+INFO: Execute Monitoring file on OS
+Mar 9, 2014 5:17:37 PM unix.ExecuteUnixOperations start
+INFO: Check if clix monitoring enabled
+Mar 9, 2014 5:17:37 PM unix.ExecuteUnixOperations start
+INFO: clix monitoring enabled - Run clix!
+Mar 24, 2014 11:36:48 AM unix.ExecuteUnixOperations start
+INFO: Program started immediatly
+Mar 24, 2014 11:36:49 AM unix.ExecuteUnixOperations start
+INFO: Gui Parameter Check started:
+Mar 24, 2014 11:36:51 AM unix.GuiParameterCheck mainGuiCheck
+INFO: Connection Test was successful
+Mar 24, 2014 11:36:53 AM unix.GuiParameterCheck mainGuiCheck
+INFO: Instance exist
+Mar 24, 2014 11:36:54 AM unix.GuiParameterCheck mainGuiCheck
+INFO: MDS is started!
+Mar 24, 2014 11:36:55 AM unix.GuiParameterCheck mainGuiCheck
+INFO: MDIS is started!
+Mar 24, 2014 11:36:56 AM unix.GuiParameterCheck mainGuiCheck
+INFO: MDSS is started!
+Mar 24, 2014 11:36:56 AM unix.ExecuteUnixOperations start
+INFO: Gui parameters check Success!
+Mar 24, 2014 11:36:56 AM unix.ExecuteUnixOperations start
+INFO: Kill vmstat and AV_monitoring processes if running
+Mar 24, 2014 11:37:01 AM unix.ExecuteUnixOperations start
+INFO: Remove old monitoring files from OS
+Mar 24, 2014 11:37:03 AM unix.ExecuteUnixOperations start
+INFO: Locate bash installation folder on OS
+Mar 24, 2014 11:37:10 AM unix.ExecuteUnixOperations start
+INFO: Copy AV_Monitoring script to OS
+Mar 24, 2014 11:37:15 AM unix.ExecuteUnixOperations start
+INFO: Execute Monitoring file on OS
+Mar 24, 2014 11:37:18 AM unix.ExecuteUnixOperations start
+INFO: Check if clix monitoring enabled
+Mar 24, 2014 11:37:18 AM unix.ExecuteUnixOperations start
+INFO: clix monitoring enabled - Run clix!
+Mar 24, 2014 12:08:01 PM unix.ExecuteUnixOperations finish
+INFO: Check tests folder's size
+Mar 24, 2014 12:08:10 PM unix.ExecuteUnixOperations finish
+INFO: Stop clix monitoring
+Mar 24, 2014 12:08:31 PM Clix.ParseClix parseClixOut
+WARNING: file exists
+Mar 24, 2014 12:08:31 PM Clix.ParseClix parseClixOut
+WARNING: [Ljava.lang.StackTraceElement;@b42cbf
+Mar 24, 2014 12:08:31 PM unix.ExecuteUnixOperations finish
+WARNING: null
+Mar 24, 2014 12:08:31 PM unix.ExecuteUnixOperations finish
+WARNING: [Ljava.lang.StackTraceElement;@e5b723
+Mar 24, 2014 12:10:28 PM unix.ExecuteUnixOperations finish
+INFO: Check tests folder's size
+Mar 24, 2014 12:11:58 PM unix.ExecuteUnixOperations start
+INFO: Program started immediatly
+Mar 24, 2014 12:11:58 PM unix.ExecuteUnixOperations start
+INFO: Gui Parameter Check started:
+Mar 24, 2014 12:11:58 PM unix.GuiParameterCheck mainGuiCheck
+INFO: Connection Test was successful
+Mar 24, 2014 12:12:00 PM unix.GuiParameterCheck mainGuiCheck
+INFO: Instance exist
+Mar 24, 2014 12:12:01 PM unix.GuiParameterCheck mainGuiCheck
+INFO: MDS is started!
+Mar 24, 2014 12:12:02 PM unix.GuiParameterCheck mainGuiCheck
+INFO: MDIS is started!
+Mar 24, 2014 12:12:03 PM unix.GuiParameterCheck mainGuiCheck
+INFO: MDSS is started!
+Mar 24, 2014 12:12:03 PM unix.ExecuteUnixOperations start
+INFO: Gui parameters check Success!
+Mar 24, 2014 12:12:03 PM unix.ExecuteUnixOperations start
+INFO: Kill vmstat and AV_monitoring processes if running
+Mar 24, 2014 12:12:08 PM unix.ExecuteUnixOperations start
+INFO: Remove old monitoring files from OS
+Mar 24, 2014 12:12:10 PM unix.ExecuteUnixOperations start
+INFO: Locate bash installation folder on OS
+Mar 24, 2014 12:12:17 PM unix.ExecuteUnixOperations start
+INFO: Copy AV_Monitoring script to OS
+Mar 24, 2014 12:12:22 PM unix.ExecuteUnixOperations start
+INFO: Execute Monitoring file on OS
+Mar 24, 2014 12:12:25 PM unix.ExecuteUnixOperations start
+INFO: Check if clix monitoring enabled
+Mar 24, 2014 12:12:25 PM unix.ExecuteUnixOperations start
+INFO: clix monitoring enabled - Run clix!
+Mar 24, 2014 12:16:11 PM unix.ExecuteUnixOperations finish
+INFO: Check tests folder's size
+Mar 24, 2014 12:16:20 PM unix.ExecuteUnixOperations finish
+INFO: Stop clix monitoring
+Mar 24, 2014 12:16:25 PM unix.ExecuteUnixOperations finish
+INFO: Add clix monitoring output to test folder2014_03_24 12_16_11
+Mar 24, 2014 12:16:25 PM unix.ExecuteUnixOperations finish
+WARNING: null
+Mar 24, 2014 12:16:25 PM unix.ExecuteUnixOperations finish
+WARNING: [Ljava.lang.StackTraceElement;@b0bad7
+Mar 24, 2014 12:27:25 PM unix.ExecuteUnixOperations start
+INFO: Program started immediatly
+Mar 24, 2014 12:27:25 PM unix.ExecuteUnixOperations start
+INFO: Gui Parameter Check started:
+Mar 24, 2014 12:27:26 PM unix.GuiParameterCheck mainGuiCheck
+INFO: Connection Test was successful
+Mar 24, 2014 12:27:27 PM unix.GuiParameterCheck mainGuiCheck
+INFO: Instance exist
+Mar 24, 2014 12:27:28 PM unix.GuiParameterCheck mainGuiCheck
+INFO: MDS is started!
+Mar 24, 2014 12:27:30 PM unix.GuiParameterCheck mainGuiCheck
+INFO: MDIS is started!
+Mar 24, 2014 12:27:31 PM unix.GuiParameterCheck mainGuiCheck
+INFO: MDSS is started!
+Mar 24, 2014 12:27:31 PM unix.ExecuteUnixOperations start
+INFO: Gui parameters check Success!
+Mar 24, 2014 12:27:31 PM unix.ExecuteUnixOperations start
+INFO: Kill vmstat and AV_monitoring processes if running
+Mar 24, 2014 12:27:36 PM unix.ExecuteUnixOperations start
+INFO: Remove old monitoring files from OS
+Mar 24, 2014 12:27:37 PM unix.ExecuteUnixOperations start
+INFO: Locate bash installation folder on OS
+Mar 24, 2014 12:27:44 PM unix.ExecuteUnixOperations start
+INFO: Copy AV_Monitoring script to OS
+Mar 24, 2014 12:27:50 PM unix.ExecuteUnixOperations start
+INFO: Execute Monitoring file on OS
+Mar 24, 2014 12:27:52 PM unix.ExecuteUnixOperations start
+INFO: Check if clix monitoring enabled
+Mar 24, 2014 12:27:52 PM unix.ExecuteUnixOperations start
+INFO: clix monitoring enabled - Run clix!
+Mar 24, 2014 12:33:50 PM unix.ExecuteUnixOperations finish
+INFO: Check tests folder's size
+Mar 24, 2014 12:33:59 PM unix.ExecuteUnixOperations finish
+INFO: Stop clix monitoring
+Mar 24, 2014 12:34:04 PM unix.ExecuteUnixOperations finish
+INFO: Add clix monitoring output to test folder2014_03_24 12_33_50
+Mar 24, 2014 12:34:04 PM unix.ExecuteUnixOperations finish
+WARNING: Index: 0, Size: 0
+Mar 24, 2014 12:34:04 PM unix.ExecuteUnixOperations finish
+WARNING: [Ljava.lang.StackTraceElement;@6f50a8
+Mar 24, 2014 1:24:42 PM unix.ExecuteUnixOperations start
+INFO: Program started immediatly
+Mar 24, 2014 1:24:42 PM unix.ExecuteUnixOperations start
+INFO: Gui Parameter Check started:
+Mar 24, 2014 1:24:43 PM unix.GuiParameterCheck mainGuiCheck
+INFO: Connection Test was successful
+Mar 24, 2014 1:24:44 PM unix.GuiParameterCheck mainGuiCheck
+INFO: Instance exist
+Mar 24, 2014 1:24:45 PM unix.GuiParameterCheck mainGuiCheck
+INFO: MDS is started!
+Mar 24, 2014 1:24:47 PM unix.GuiParameterCheck mainGuiCheck
+INFO: MDIS is started!
+Mar 24, 2014 1:24:48 PM unix.GuiParameterCheck mainGuiCheck
+INFO: MDSS is started!
+Mar 24, 2014 1:24:48 PM unix.ExecuteUnixOperations start
+INFO: Gui parameters check Success!
+Mar 24, 2014 1:24:48 PM unix.ExecuteUnixOperations start
+INFO: Kill vmstat and AV_monitoring processes if running
+Mar 24, 2014 1:24:53 PM unix.ExecuteUnixOperations start
+INFO: Remove old monitoring files from OS
+Mar 24, 2014 1:24:54 PM unix.ExecuteUnixOperations start
+INFO: Locate bash installation folder on OS
+Mar 24, 2014 1:25:01 PM unix.ExecuteUnixOperations start
+INFO: Copy AV_Monitoring script to OS
+Mar 24, 2014 1:25:07 PM unix.ExecuteUnixOperations start
+INFO: Execute Monitoring file on OS
+Mar 24, 2014 1:25:09 PM unix.ExecuteUnixOperations start
+INFO: Check if clix monitoring enabled
+Mar 24, 2014 1:25:09 PM unix.ExecuteUnixOperations start
+INFO: clix monitoring enabled - Run clix!
+Mar 24, 2014 1:26:04 PM unix.ExecuteUnixOperations finish
+INFO: Check tests folder's size
+Mar 24, 2014 1:26:15 PM unix.ExecuteUnixOperations finish
+INFO: Stop clix monitoring
+Mar 24, 2014 1:26:18 PM unix.ExecuteUnixOperations finish
+INFO: Add clix monitoring output to test folder2014_03_24 13_26_04
+Mar 24, 2014 1:26:19 PM unix.ExecuteUnixOperations finish
+INFO: Charts generation and analysis
+Mar 24, 2014 1:26:21 PM unix.ExecuteUnixOperations finish
+INFO: Add CPU chart image to test folder2014_03_24 13_26_04
+Mar 24, 2014 1:26:21 PM unix.ExecuteUnixOperations finish
+INFO: Add memory chart image to test folder2014_03_24 13_26_04
+Mar 24, 2014 1:26:21 PM unix.ExecuteUnixOperations finish
+INFO: Add mds/mdis/mdss monitoring output to test folder2014_03_24 13_26_04
+Mar 24, 2014 1:26:22 PM unix.ExecuteUnixOperations finish
+INFO: Charts generation and analysis
+Mar 24, 2014 1:26:23 PM unix.ExecuteUnixOperations finish
+INFO: Add CPU chart image to test folder2014_03_24 13_26_04
+Mar 24, 2014 1:26:23 PM unix.ExecuteUnixOperations finish
+INFO: Add memory chart image to test folder2014_03_24 13_26_04
+Mar 24, 2014 1:26:23 PM unix.ExecuteUnixOperations finish
+INFO: Add mds/mdis/mdss monitoring output to test folder2014_03_24 13_26_04
+Mar 24, 2014 1:26:23 PM unix.ExecuteUnixOperations finish
+WARNING: For input string: "1.4"
+Mar 24, 2014 1:26:23 PM unix.ExecuteUnixOperations finish
+WARNING: [Ljava.lang.StackTraceElement;@173ec72
+Mar 24, 2014 1:47:49 PM unix.ExecuteUnixOperations start
+INFO: Program started immediatly
+Mar 24, 2014 1:47:49 PM unix.ExecuteUnixOperations start
+INFO: Gui Parameter Check started:
+Mar 24, 2014 1:47:49 PM unix.GuiParameterCheck mainGuiCheck
+INFO: Connection Test was successful
+Mar 24, 2014 1:47:50 PM unix.GuiParameterCheck mainGuiCheck
+INFO: Instance exist
+Mar 24, 2014 1:47:52 PM unix.GuiParameterCheck mainGuiCheck
+INFO: MDS is started!
+Mar 24, 2014 1:47:53 PM unix.GuiParameterCheck mainGuiCheck
+INFO: MDIS is started!
+Mar 24, 2014 1:47:54 PM unix.GuiParameterCheck mainGuiCheck
+INFO: MDSS is started!
+Mar 24, 2014 1:47:54 PM unix.ExecuteUnixOperations start
+INFO: Gui parameters check Success!
+Mar 24, 2014 1:47:54 PM unix.ExecuteUnixOperations start
+INFO: Kill vmstat and AV_monitoring processes if running
+Mar 24, 2014 1:47:59 PM unix.ExecuteUnixOperations start
+INFO: Remove old monitoring files from OS
+Mar 24, 2014 1:48:00 PM unix.ExecuteUnixOperations start
+INFO: Locate bash installation folder on OS
+Mar 24, 2014 1:48:08 PM unix.ExecuteUnixOperations start
+INFO: Copy AV_Monitoring script to OS
+Mar 24, 2014 1:48:13 PM unix.ExecuteUnixOperations start
+INFO: Execute Monitoring file on OS
+Mar 24, 2014 1:48:15 PM unix.ExecuteUnixOperations start
+INFO: Check if clix monitoring enabled
+Mar 24, 2014 1:48:15 PM unix.ExecuteUnixOperations start
+INFO: clix monitoring enabled - Run clix!
+Mar 24, 2014 1:50:48 PM unix.ExecuteUnixOperations finish
+INFO: Check tests folder's size
+Mar 24, 2014 1:50:59 PM unix.ExecuteUnixOperations finish
+INFO: Stop clix monitoring
+Mar 24, 2014 1:51:03 PM unix.ExecuteUnixOperations finish
+INFO: Add clix monitoring output to test folder2014_03_24 13_50_48
+Mar 24, 2014 1:51:05 PM unix.ExecuteUnixOperations finish
+INFO: Charts generation and analysis
+Mar 24, 2014 1:51:05 PM unix.ExecuteUnixOperations finish
+INFO: Add CPU chart image to test folder2014_03_24 13_50_48
+Mar 24, 2014 1:51:05 PM unix.ExecuteUnixOperations finish
+INFO: Add memory chart image to test folder2014_03_24 13_50_48
+Mar 24, 2014 1:51:05 PM unix.ExecuteUnixOperations finish
+INFO: Add mds/mdis/mdss monitoring output to test folder2014_03_24 13_50_48
+Mar 24, 2014 1:51:07 PM unix.ExecuteUnixOperations finish
+INFO: Charts generation and analysis
+Mar 24, 2014 1:51:07 PM unix.ExecuteUnixOperations finish
+INFO: Add CPU chart image to test folder2014_03_24 13_50_48
+Mar 24, 2014 1:51:07 PM unix.ExecuteUnixOperations finish
+INFO: Add memory chart image to test folder2014_03_24 13_50_48
+Mar 24, 2014 1:51:07 PM unix.ExecuteUnixOperations finish
+INFO: Add mds/mdis/mdss monitoring output to test folder2014_03_24 13_50_48
+Mar 24, 2014 1:51:07 PM unix.ExecuteUnixOperations finish
+WARNING: For input string: "1.4"
+Mar 24, 2014 1:51:07 PM unix.ExecuteUnixOperations finish
+WARNING: [Ljava.lang.StackTraceElement;@13576a2
+Mar 24, 2014 1:52:35 PM unix.ExecuteUnixOperations start
+INFO: Program started immediatly
+Mar 24, 2014 1:52:35 PM unix.ExecuteUnixOperations start
+INFO: Gui Parameter Check started:
+Mar 24, 2014 1:52:35 PM unix.GuiParameterCheck mainGuiCheck
+INFO: Connection Test was successful
+Mar 24, 2014 1:52:37 PM unix.GuiParameterCheck mainGuiCheck
+INFO: Instance exist
+Mar 24, 2014 1:52:38 PM unix.GuiParameterCheck mainGuiCheck
+INFO: MDS is started!
+Mar 24, 2014 1:52:39 PM unix.GuiParameterCheck mainGuiCheck
+INFO: MDIS is started!
+Mar 24, 2014 1:52:40 PM unix.GuiParameterCheck mainGuiCheck
+INFO: MDSS is started!
+Mar 24, 2014 1:52:40 PM unix.ExecuteUnixOperations start
+INFO: Gui parameters check Success!
+Mar 24, 2014 1:52:40 PM unix.ExecuteUnixOperations start
+INFO: Kill vmstat and AV_monitoring processes if running
+Mar 24, 2014 1:52:45 PM unix.ExecuteUnixOperations start
+INFO: Remove old monitoring files from OS
+Mar 24, 2014 1:52:46 PM unix.ExecuteUnixOperations start
+INFO: Locate bash installation folder on OS
+Mar 24, 2014 1:52:54 PM unix.ExecuteUnixOperations start
+INFO: Copy AV_Monitoring script to OS
+Mar 24, 2014 1:52:59 PM unix.ExecuteUnixOperations start
+INFO: Execute Monitoring file on OS
+Mar 24, 2014 1:53:02 PM unix.ExecuteUnixOperations start
+INFO: Check if clix monitoring enabled
+Mar 24, 2014 1:53:02 PM unix.ExecuteUnixOperations start
+INFO: clix monitoring enabled - Run clix!
+Mar 24, 2014 1:54:23 PM unix.ExecuteUnixOperations finish
+INFO: Check tests folder's size
+Mar 24, 2014 1:54:34 PM unix.ExecuteUnixOperations finish
+INFO: Stop clix monitoring
+Mar 24, 2014 1:54:38 PM unix.ExecuteUnixOperations finish
+INFO: Add clix monitoring output to test folder2014_03_24 13_54_23
+Mar 24, 2014 1:54:39 PM unix.ExecuteUnixOperations finish
+INFO: Charts generation and analysis
+Mar 24, 2014 1:54:39 PM unix.ExecuteUnixOperations finish
+INFO: Add CPU chart image to test folder2014_03_24 13_54_23
+Mar 24, 2014 1:54:40 PM unix.ExecuteUnixOperations finish
+INFO: Add memory chart image to test folder2014_03_24 13_54_23
+Mar 24, 2014 1:54:40 PM unix.ExecuteUnixOperations finish
+INFO: Add mds/mdis/mdss monitoring output to test folder2014_03_24 13_54_23
+Mar 24, 2014 1:54:41 PM unix.ExecuteUnixOperations finish
+INFO: Charts generation and analysis
+Mar 24, 2014 1:54:41 PM unix.ExecuteUnixOperations finish
+INFO: Add CPU chart image to test folder2014_03_24 13_54_23
+Mar 24, 2014 1:54:41 PM unix.ExecuteUnixOperations finish
+INFO: Add memory chart image to test folder2014_03_24 13_54_23
+Mar 24, 2014 1:54:41 PM unix.ExecuteUnixOperations finish
+INFO: Add mds/mdis/mdss monitoring output to test folder2014_03_24 13_54_23
+Mar 24, 2014 1:54:41 PM unix.ExecuteUnixOperations finish
+WARNING: For input string: "5.0"
+Mar 24, 2014 1:54:41 PM unix.ExecuteUnixOperations finish
+WARNING: [Ljava.lang.StackTraceElement;@7c3885
