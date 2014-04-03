@@ -30,8 +30,6 @@ import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.CellStyle;
 import org.apache.poi.ss.usermodel.FormulaEvaluator;
 import org.apache.poi.ss.usermodel.Row;
-import org.apache.poi.xssf.usermodel.XSSFSheet;
-import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 // -------------- AIX/LINUX/SOLARIS OUTPUT -----
 // column number 1 = time
@@ -223,6 +221,7 @@ public class ExcelManagement extends FilesManagment
 	public void setDiffToFile(int[][] diffArr, String ExcelFilePath)
 	{ 		    
 		int lastCol = getLastCol(1, filePath); 		 //the row num could be any row
+		
 		for (int i = 0 ; i < diffArr.length ; i++)
 		{
 			setDiffToRow(diffArr[i][1], lastCol, diffArr[i][0], ExcelFilePath);
@@ -234,6 +233,8 @@ public class ExcelManagement extends FilesManagment
 	/* This method will add anew column with the memory diff
 	 *  values and will paint in yellow the relevant 
 	*/
+	
+
 	public void mainExcelFlow(int RSSVSZColNum, int maxDiff, int interval, Folder testFolder)
 	{
 		try
@@ -246,7 +247,6 @@ public class ExcelManagement extends FilesManagment
 			int[][] diffArr = findDiffGreater(fullDiffArr, maxDiff);
 			String[] dateStrArr = new String[diffArr.length];
 			Hashtable<String, List<Integer>> rowNumsforDate = new Hashtable<String, List<Integer>>();    // dateString + list of row numbers in the date interavl, in each cell
-			int lastIt = 0;
 			
 			setDiffToFile(diffArr,filePath);	
 			
@@ -340,6 +340,37 @@ public class ExcelManagement extends FilesManagment
 			e.printStackTrace();
 		}
 	}
+	
+	
+	// Set cell value
+	public void addHeader(int lastCol, String VSZRSS, String ExcelFilePath)
+	{
+		try
+		{
+			FileInputStream file = new FileInputStream(new File(ExcelFilePath));
+			 
+		    HSSFWorkbook workbook = new HSSFWorkbook(file);
+		    HSSFSheet sheet = workbook.getSheetAt(0);
+		    
+		    Row row = sheet.getRow(0);
+			row.createCell(lastCol).setCellValue(VSZRSS);
+			FileOutputStream out = new FileOutputStream(ExcelFilePath);
+			workbook.write(out);
+			out.close();
+			
+		}
+		catch( FileNotFoundException e)
+		{
+			MonLogger.myLogger.log(Level.WARNING, e.getMessage());
+    		MonLogger.myLogger.log(Level.WARNING, e.getStackTrace().toString());
+			e.printStackTrace();
+		} catch (IOException e) {
+			MonLogger.myLogger.log(Level.WARNING, e.getMessage());
+    		MonLogger.myLogger.log(Level.WARNING, e.getStackTrace().toString());
+			e.printStackTrace();
+		}
+	}
+	
 	
 	
 	// HSSFColor.YELLOW.index = short object

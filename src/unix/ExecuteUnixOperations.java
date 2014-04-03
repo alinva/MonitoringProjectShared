@@ -17,7 +17,10 @@ import java.util.List;
 import log.MonLogger;
 
 
+
+
 import org.jfree.ui.RefineryUtilities;
+
 import Charts.ChartGeneration;
 import FilesManagment.Converter;
 import FilesManagment.DateOperations;
@@ -96,13 +99,12 @@ public class ExecuteUnixOperations extends CommandExecuter
 	DateFormat dateFormat = new SimpleDateFormat("yyyy_MM_dd HH_mm_ss");
 	   //get current date time with Date()
 	Date date = new Date();
-	String TestFolderName = dateFormat.format(date) + getOS();
+	String TestFolderName = dateFormat.format(date) + "_" + getOS();
 	
 	Folder TestFolder;
 	
 	Folder mainFolder = new Folder(System.getProperty("user.dir") + "\\Monitoring Tests");
-	MonLogger monLogger = MonLogger.getInstance();
-	
+	MonLogger myLogger = MonLogger.getInstance();
 	//-----------------------------------------------------------------------------
 	//-----------------------------------------------------------------------------
  
@@ -112,8 +114,6 @@ public class ExecuteUnixOperations extends CommandExecuter
     {
     	try
     	{
-    		
-
 			MonLogger.myLogger.log(Level.INFO, "Program started immediatly");
 			MonLogger.myLogger.log(Level.INFO, "Gui Parameter Check started:");
     		GuiParameterCheck guiParameterCheck =  new GuiParameterCheck(SID, hostName, userName,password);
@@ -162,68 +162,48 @@ public class ExecuteUnixOperations extends CommandExecuter
     }
     
     
-    public void startOnTime()
+    private boolean checkTime() throws InterruptedException, ParseException
     {
-    	try
+		MonLogger.myLogger.log(Level.INFO, "Check Time invoked");
+    	boolean TF = false;
+		Calendar cal = Calendar.getInstance();
+    	cal.getTime();
+    	SimpleDateFormat currentTime = new SimpleDateFormat("dd-mm-yyyy HH:mm:ss");
+    	//Object currentTime;
+		String comparison = dateOperations.compareTwoDates(currentTime.toString(), startDate);
+		while (comparison.equals("date1Smaller"))
+		{
+			Thread.sleep(DateOperations.getDateDiff(startDate, currentTime.toString()));
+			comparison = dateOperations.compareTwoDates(currentTime.toString(), startDate);
+		}
+		if (comparison.equals("date1Bigger") || comparison.equals("date1Equals"))
+		{
+			TF = true;;
+			MonLogger.myLogger.log(Level.INFO, "Time was reached");
+		}
+		return TF;
+    	
+    }
+    
+    
+    public void startOnTime() throws InterruptedException, ParseException
+    {
+    	if (checkTime())
     	{
-    		GuiParameterCheck guiParameterCheck =  new GuiParameterCheck(SID, hostName, userName,password);
-    		if(!guiParameterCheck.mainGuiCheck())
-    		{
-    			//TODO: Return to GUI   - ZOHAR
-    			MonLogger.myLogger.log(Level.INFO, "Gui parameters check FAILED! return to GUI..");
-    		}
-    		MonLogger.myLogger.log(Level.INFO, "Gui parameters check Success!");
-    		
-    		
-    		Calendar cal = Calendar.getInstance();
-        	cal.getTime();
-        	SimpleDateFormat currentTime = new SimpleDateFormat("dd-mm-yyyy HH:mm:ss");
-        	//Object currentTime;
-			String comparison = dateOperations.compareTwoDates(currentTime.toString(), startDate);
-			while (comparison.equals("date1Smaller"))
-			{
-				Thread.sleep(DateOperations.getDateDiff(startDate, currentTime.toString()));
-				comparison = dateOperations.compareTwoDates(currentTime.toString(), startDate);
-			}
-			if (comparison.equals("date1Bigger") || comparison.equals("date1Equals"))
-			{
-				MonLogger.myLogger.log(Level.INFO, "Program started on time");
-				MonLogger.myLogger.log(Level.INFO, "Kill vmstat and AV_monitoring processes if running");
-	    		runkillSH.killProcesses(mon_file);
-	    		
-
-	    		MonLogger.myLogger.log(Level.INFO, "Remove old monitoring files from OS");
-	    		
-	    		runkillSH.removeFilesFromUnix();
-	    		fileManagmentOperations.removeFirstLine(mon_file);
-	    		MonLogger.myLogger.log(Level.INFO, "Locate bash installation folder on OS");
-	    		
-	    		String bash = "#!" + runkillSH.locateBash(getOS());
-	    		fileManagmentOperations.insertTextToFile(0, bash, mon_file);  	
-	    		
-	    		MonLogger.myLogger.log(Level.INFO, "Copy AV_Monitoring script to OS");
-	    		winUnixOperations.copyToUnix(mon_file);
-	    		
-	    		MonLogger.myLogger.log(Level.INFO, "Execute Monitoring file on OS");
-	    		runkillSH.ExecuteSh(paramsForSH, mon_file);
-	   
-	    		MonLogger.myLogger.log(Level.INFO, "Check if clix monitoring enabled");
-	    		if (clixOn)
-	    		{
-	    			MonLogger.myLogger.log(Level.INFO, "clix monitoring enabled - Run clix!");
-	    			 clixCommand = new clix(String.valueOf(interval), port, hostName, password);
-	    			 clixCommand.runClix();
-	    			 
-
-	    		}
-	    			
-			}
+    		MonLogger.myLogger.log(Level.INFO, "Started on time entered by user");
+    		start();
     	}
-    	catch (Exception e)
+    		
+    }
+    
+    
+    
+    public void finishOnTime() throws InterruptedException, ParseException, IOException
+    {
+    	if (checkTime())
     	{
-    		MonLogger.myLogger.log(Level.WARNING, e.getMessage());
-    		MonLogger.myLogger.log(Level.WARNING, e.getStackTrace().toString());
-			e.printStackTrace();
+    		MonLogger.myLogger.log(Level.INFO, "Finished on time entered by user");
+    		finish();
     	}
     }
     
@@ -239,13 +219,13 @@ public class ExecuteUnixOperations extends CommandExecuter
 	    			
 	    		 	MonLogger.myLogger.log(Level.INFO, "Check tests folder's size");
 	    		 	mainFolder.checkFolderSize();
-	    			TestFolder = new Folder( mainFolder + "\\" + TestFolderName + getOS());
+	    			TestFolder = new Folder( mainFolder + "\\" + TestFolderName);
 	    			
 	    		}
 	    		else
 	    		{
 	    			MonLogger.myLogger.log(Level.INFO, "Create tests folder");
-	    			TestFolder = new Folder(System.getProperty("user.dir")  + "\\Monitoring Tests\\" + TestFolderName + getOS());
+	    			TestFolder = new Folder(System.getProperty("user.dir")  + "\\Monitoring Tests\\" + TestFolderName);
 	    		}		
 		
 	    	
@@ -352,7 +332,7 @@ public class ExecuteUnixOperations extends CommandExecuter
 					MonLogger.myLogger.log(Level.INFO, "Add mds/mdis/mdss monitoring output to test folder" + TestFolderName);
 					if (fileName.startsWith("mds_"))
 					{
-						excelManagement.mainExcelFlow(4, 0, interval, TestFolder);	
+						excelManagement.mainExcelFlow(4, 10, interval, TestFolder);	
 					}
 					
 				}
@@ -381,7 +361,7 @@ public class ExecuteUnixOperations extends CommandExecuter
 					TestFolder.addFileToFolder(fileName);
 					if (fileName.startsWith("mds_"))
 					{
-						excelManagement.mainExcelFlow(6, 0, interval, TestFolder);	
+						excelManagement.mainExcelFlow(6, 10, interval, TestFolder);	
 					}
 					
 					

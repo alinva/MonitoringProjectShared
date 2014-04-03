@@ -36,8 +36,6 @@ public class Test
 		
 		ExecuteUnixOperations executeUnixOperations =  new ExecuteUnixOperations("ilsun45", "mqmadm","a2i2000!", null, null, 0);
 		executeUnixOperations.finish();		
-		
-		
 
 	}
 }

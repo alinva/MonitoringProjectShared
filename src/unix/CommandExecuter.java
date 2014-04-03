@@ -175,7 +175,12 @@ public class CommandExecuter extends UnixConnection
 				e.printStackTrace();
 			}
 		    CommandExecuter.disconnectFromUnix();
-		    int tmp = sb.toString().length() - 1;
+		    int tmp = sb.toString().length();
+		    if (tmp > 0)
+		    {
+		    	  tmp = sb.toString().length() - 1;
+		    }
+		 
 		    return sb.toString().substring(0,tmp);
 
 	}
